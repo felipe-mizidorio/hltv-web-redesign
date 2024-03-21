@@ -1,0 +1,16 @@
+@font-face {
+    font-family: Counter-Strike;
+    src: url(Fonts/Counter-Strike/cs_bold.ttf);
+}
+
+header{
+    text-align: center;
+    border: 2px solid white;
+    padding: 10px;
+    vertical-align: middle;
+    font-family: Counter-Strike;
+}
+
+h1{
+    font-size: 3vw;
+}
