@@ -9,84 +9,77 @@
     src: url(Fonts/Counter-Strike/cs_bold.ttf);
 }
 
-a {
-    color: #ffff;
-    text-decoration: none;
-}
-a:hover{
-    opacity: 0.7;
-}
-.logo {
-    font-size: 24px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-}
-nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background: #23232e;
-    height: 8vh;
-}
 main{
     background: url('Images/background.jpg') no-repeat center center;
     background-size: cover;
     height: 92vh;
 }
-.nav-list{
-    list-style: none;
-    display: flex;
+
+a{
+    color: aliceblue;
 }
-.nav-list li{
-    letter-spacing: 3px;
-    margin-left: 32px;
+
+h1{
+    font-size: 3vw;
 }
-.container{
-    padding: 2rem;
+
+*, *::before, *::after{
+    box-sizing: border-box;
 }
-.slider-wrapper{
+
+.carousel{
+    width: 30vw;
+    height: 70vh;
     position: relative;
-    max-width: 48rem;
     margin: 0 auto;
-    display:flex;
-    justify-content: center;
-    align-items: center;
 }
-#slider {
-    display: flex;
-    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
-    border-radius: 0.5rem;
-    width: 1080px;
-    height: 800px;
-    position: relative;
-    background-color: #ffffffff;
+
+.carousel > ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
-#slider img {
+
+.image{
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+}
+
+.image > img{
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
 }
-.fade-out-animation{
-    animation: fade-out 3s ease-in-out;
+
+.image[data-active]{
+    opacity: 1;
+}
+
+.carousel-button{
     position: absolute;
+    background: none;
+    z-index: 2;
+    border: none;
+    font-size: 4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, .7);
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 10px;
 }
-@keyframes fade-out {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
+
+.carousel-button:hover,
+.carousel-button:focus{
+    background-color: rgba(0, 0, 0, .3);
 }
-.fade-in-animation{
-    animation: fade-in 3s ease-in-out;
-    position: absolute;
+
+.carousel-button.prev{
+    left: 1rem;
 }
-@keyframes fade-in {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+
+.carousel-button.next{
+    right: 1rem;
 }

@@ -3,30 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site</title>
+    <title>HLTV</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 
 </head>
     <body>
         <header>
             <nav>
-                <a class="logo" href="/">HLTV -</a>
-                <ul class="nav-list">
-                    <li><a href="/matches">Matches</a></li>
-                    <li><a href="/teams">Teams</a></li>
-                    <li><a href="/players">Players</a></li>
-                    <li><a href="/events">Events</a></li>
-                </ul>
+                <a href="index.html"><h1>HLTV -</h1></a>
+                <big><a href="index.html">Home</a></big>
+                <big><a href="">Menu</a></big>
+                <big><a href="">About</a></big>
+                <big><a href="">Support</a></big>
             </nav>
+            <br><hr>
         </header>
+
         <main>
-            <section class="container">   
-                <div class="slider-wrapper">
-                    <div id="slider">
-                    </div>
-                </div>
-            </section>
+            <br>
+            <div class="carousel" data-carousel>
+                <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+                <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+                <ul data-images>
+                  <li class="image" data-active>
+                    <img src="Images/Photo1.jpg" alt="Image #1">
+                  </li>
+                  <li class="image">
+                    <img src="Images/Photo2.jpg" alt="Image #2">
+                  </li>
+                  <li class="image">
+                    <img src="Images/Photo3.jpg" alt="Image #3">
+                  </li>
+                </ul>
+              </div>
         </main>
-        <script src="script.js"></script>
+
     </body>
 </html>

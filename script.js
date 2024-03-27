@@ -1,28 +1,19 @@
-{/* <img id="slide-1" src="Images/Photo1.jpg" alt="fury is classified">
-<img id="slide-2" src="Images/Photo2.jpg" alt="duel of giants">
-<img id="slide-3" src="Images/Photo3.jpg" alt="imperial is classified">  */}
+const buttons = document.querySelectorAll("[data-carousel-button]")
 
-const carousel = document.getElementById('slider')
-const slides = ['Images/Photo1.jpg', 'Images/Photo2.jpg', 'Images/Photo3.jpg']
-let currentSlide = 0
+buttons.forEach(button => {
+    button.addEventListener("click", () => {
+        const offset = button.dataset.carouselButton === "next" ? 1 : -1
+        const images = button
+            .closest("[data-carousel]")
+            .querySelector("[data-images]")
+        
+        const activeImage = images.querySelector("[data-active]")
+        let newIndex = [...images.children].indexOf(activeImage) + offset
 
+        if (newIndex < 0) newIndex = images.children.length - 1
+        if (newIndex >= images.children.length) newIndex = 0
 
-setInterval(() => {
-    currentSlide = (currentSlide + 1) % slides.length
-    const slide = document.createElement('img')
-    slide.src = slides[currentSlide]
-    const nextSlide = document.createElement('img')
-    nextSlide.src = slides[(currentSlide + 1) % slides.length]
-    
-    carousel.appendChild(slide)
-    carousel.appendChild(nextSlide)
-
-    const lastSlide = slides.shift()
-    slide.classList.add('fade-in-animation')
-    slide.classList.add('fade-out-animation')
-    slides.push(lastSlide)
-    setTimeout(() => {
-        carousel.removeChild(slide)
-        carousel.removeChild(nextSlide)
-    }, 3000)
-}, 3000)
+        images.children[newIndex].dataset.active = true
+        delete activeImage.dataset.active
+    })
+})
