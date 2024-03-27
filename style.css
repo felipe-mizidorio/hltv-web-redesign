@@ -15,12 +15,27 @@ main{
     height: 92vh;
 }
 
-a{
-    color: aliceblue;
+a {
+    color: #ffff;
+    text-decoration: none;
 }
 
-h1{
-    font-size: 3vw;
+a:hover{
+    opacity: 0.7;
+}
+
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #23232e;
+    height: 8vh;
 }
 
 *, *::before, *::after{
@@ -29,7 +44,7 @@ h1{
 
 .carousel{
     width: 30vw;
-    height: 70vh;
+    height: 80vh;
     position: relative;
     margin: 0 auto;
 }
@@ -41,9 +56,12 @@ h1{
 }
 
 .image{
+    margin-top: 10px;
     position: absolute;
     inset: 0;
     opacity: 0;
+    transition: 200ms opacity ease-in-out;
+    transition-delay: 200ms;
 }
 
 .image > img{
@@ -56,6 +74,8 @@ h1{
 
 .image[data-active]{
     opacity: 1;
+    z-index: 1;
+    transition-delay: 0ms;
 }
 
 .carousel-button{
