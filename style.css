@@ -107,3 +107,46 @@ nav{
 .carousel-button.next > img{
     transform: rotate(180deg);
 }
+
+.matches-table img{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    top: 3px;
+    right: 9px;
+}
+
+.matches-main h1{
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.matches-table{
+    color: white;
+    margin: 0 auto;
+    max-width: fit-content;
+}
+
+.matches-table table{
+    border-collapse: collapse;
+    width: 1500px;
+}
+
+.matches-table th{
+    text-align: initial;
+}
+
+.matches-table tr:nth-child(4n+2), .matches-table tr:nth-child(4n+3){
+    background-color: #364250;
+}
+
+.matches-table tr:nth-child(4n), .matches-table tr:nth-child(4n+1){
+    background-color: #28313b;
+}
+
+.matches-table th, td{
+    padding: 20px 50px;
+    max-width: 600px;
+    word-wrap: break-word;
+}
