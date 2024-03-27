@@ -92,8 +92,7 @@ nav{
     display: flex;
 }
 
-.carousel-button:hover,
-.carousel-button:focus{
+.carousel-button:hover{
     background-color: rgba(0, 0, 0, .3);
 }
 
