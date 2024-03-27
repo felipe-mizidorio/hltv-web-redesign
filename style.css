@@ -1,16 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Counter-Strike;
+}
+
 @font-face {
     font-family: Counter-Strike;
     src: url(Fonts/Counter-Strike/cs_bold.ttf);
 }
 
-header{
-    text-align: center;
-    border: 2px solid white;
-    padding: 10px;
-    vertical-align: middle;
-    font-family: Counter-Strike;
+a {
+    color: #ffff;
+    text-decoration: none;
 }
-
-h1{
-    font-size: 3vw;
+a:hover{
+    opacity: 0.7;
+}
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #23232e;
+    height: 8vh;
+}
+main{
+    background: url('Images/background.jpg') no-repeat center center;
+    background-size: cover;
+    height: 92vh;
+}
+.nav-list{
+    list-style: none;
+    display: flex;
+}
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+.container{
+    padding: 2rem;
+}
+.slider-wrapper{
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#slider {
+    display: flex;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.5rem;
+    width: 1080px;
+    height: 800px;
+    position: relative;
+    background-color: #ffffffff;
+}
+#slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.fade-out-animation{
+    animation: fade-out 3s ease-in-out;
+    position: absolute;
+}
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.fade-in-animation{
+    animation: fade-in 3s ease-in-out;
+    position: absolute;
+}
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
