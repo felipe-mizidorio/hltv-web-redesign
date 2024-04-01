@@ -150,3 +150,8 @@ nav{
     max-width: 600px;
     word-wrap: break-word;
 }
+
+.stats_tables img{
+    width: 25px;
+    height: 25px;
+}
