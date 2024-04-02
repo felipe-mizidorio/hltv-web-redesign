@@ -205,8 +205,6 @@ nav{
 
 .player-image, .team-image-stats, .country-image{
     position: relative;
-    top: 3px;
-    right: 9px;
 }
 
 .player-image, .team-image-stats{
@@ -236,27 +234,11 @@ nav{
 
 /* ----------------------------------------------REFACTOR---------------------------------------------- */
 
-.top-players-table td:nth-child(1), .top-teams-table td:nth-child(1){
+.top-players-table td:nth-child(-n+3), .top-teams-table td:nth-child(-n+2){
     width: 20px;
-    padding-left: 50px;
-}
-
-.top-players-table td:nth-child(2){
-    width: 20px;
-    padding-left: 20px;
-}
-
-.top-players-table td:nth-child(3), .top-teams-table td:nth-child(2){
     padding-left: 10px;
 }
 
-.top-players-table td:nth-child(4), .top-teams-table td:nth-child(3){
-    width: 200px;
+.top-players-table td:nth-child(3), .top-teams-table td:nth-child(2){
+    width: 50%;
 }
-
-.top-players-table td:nth-child(5), .top-teams-table td:nth-child(4){
-    width: 150px;
-    justify-content: center;
-}
-
-
