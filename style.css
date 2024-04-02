@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Counter-Strike;
 }
 
 @font-face {
@@ -9,10 +8,36 @@
     src: url(Fonts/Counter-Strike/cs_bold.ttf);
 }
 
+@font-face {
+    font-family: Exo_2_Medium;
+    src: url(Fonts/Exo_2/static/Exo2-Medium.ttf);
+}
+
 main{
     background: url('Images/background.jpg') no-repeat center center;
+    background-attachment: fixed;
     background-size: cover;
-    height: 92vh;
+    min-height: 100vh;
+    height: 100%;
+}
+
+main::before{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6);
+}
+
+main > *{
+    position: relative;
+    z-index: 1;
+}
+
+h1{
+    font-family: Counter-Strike;
 }
 
 a {
@@ -36,11 +61,16 @@ nav{
     align-items: center;
     background: #23232e;
     height: 8vh;
+    font-family: Counter-Strike;
+    position: relative;
+    z-index: 2;
 }
 
 *, *::before, *::after{
     box-sizing: border-box;
 }
+
+/* ----------------------------------------------HOME PAGE---------------------------------------------- */
 
 .carousel{
     top: 30px;
@@ -108,6 +138,8 @@ nav{
     transform: rotate(180deg);
 }
 
+/* ----------------------------------------------MATCHES PAGE---------------------------------------------- */
+
 .matches-table img{
     width: 15px;
     height: 15px;
@@ -130,7 +162,7 @@ nav{
 
 .matches-table table{
     border-collapse: collapse;
-    width: 1500px;
+    width: 90vw;
 }
 
 .matches-table th{
@@ -149,9 +181,52 @@ nav{
     padding: 20px 50px;
     max-width: 600px;
     word-wrap: break-word;
+    font-family: Exo_2_Medium;
 }
 
-.stats_tables img{
-    width: 25px;
-    height: 25px;
+/* ----------------------------------------------STATS PAGE---------------------------------------------- */
+
+.stats-tables td{
+    font-family: Exo_2_Medium;
+}
+
+.stats-tables h1{
+    color: white;
+    text-align: center;
+    padding: 25px 0;   
+}
+
+.player-image, .team-image-stats, .country-image{
+    position: relative;
+    top: 3px;
+    right: 9px;
+}
+
+.player-image, .team-image-stats{
+    width: 35px;
+    height: 35px;
+}
+
+.country-image{
+    width: 20px;
+}
+
+.top-players-table, .top-teams-table{
+    color: white;
+    margin: 0 auto;
+    max-width: fit-content;
+}
+
+.top-players-table table, .top-teams-table table{
+    border-collapse: separate;
+    border-spacing: 0 3px;
+    width: 90vw;
+}
+
+.top-players-table tr:nth-child(even), .top-teams-table tr:nth-child(even){
+    background-color: #364250;
+}
+
+.top-players-table tr:nth-child(odd), .top-teams-table tr:nth-child(odd){
+    background-color: #28313b;
 }
