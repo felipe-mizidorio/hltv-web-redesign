@@ -177,7 +177,7 @@ nav{
     background-color: #28313b;
 }
 
-.matches-table th, td{
+.matches-table th, .matches-table td{
     padding: 20px 50px;
     max-width: 600px;
     word-wrap: break-word;
@@ -187,7 +187,14 @@ nav{
 /* ----------------------------------------------STATS PAGE---------------------------------------------- */
 
 .stats-tables td{
+    padding: 10px 20px;
+    word-wrap: break-word;
     font-family: Exo_2_Medium;
+    width: fit-content;
+}
+
+.stats-tables{
+    display: flex;
 }
 
 .stats-tables h1{
@@ -204,7 +211,7 @@ nav{
 
 .player-image, .team-image-stats{
     width: 35px;
-    height: 35px;
+    height: 35px; 
 }
 
 .country-image{
@@ -220,13 +227,36 @@ nav{
 .top-players-table table, .top-teams-table table{
     border-collapse: separate;
     border-spacing: 0 3px;
-    width: 90vw;
+    width: 45vw;
 }
 
-.top-players-table tr:nth-child(even), .top-teams-table tr:nth-child(even){
-    background-color: #364250;
-}
-
-.top-players-table tr:nth-child(odd), .top-teams-table tr:nth-child(odd){
+.top-players-table tr, .top-teams-table tr{
     background-color: #28313b;
 }
+
+/* ----------------------------------------------REFACTOR---------------------------------------------- */
+
+.top-players-table td:nth-child(1), .top-teams-table td:nth-child(1){
+    width: 20px;
+    padding-left: 50px;
+}
+
+.top-players-table td:nth-child(2){
+    width: 20px;
+    padding-left: 20px;
+}
+
+.top-players-table td:nth-child(3), .top-teams-table td:nth-child(2){
+    padding-left: 10px;
+}
+
+.top-players-table td:nth-child(4), .top-teams-table td:nth-child(3){
+    width: 200px;
+}
+
+.top-players-table td:nth-child(5), .top-teams-table td:nth-child(4){
+    width: 150px;
+    justify-content: center;
+}
+
+
