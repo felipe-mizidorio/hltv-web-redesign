@@ -1,6 +1,9 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+*, body {
     margin: 0;
     padding: 0;
+    font-family: 'Exo 2', sans-serif;
 }
 
 @font-face {
@@ -8,17 +11,16 @@
     src: url(Fonts/Counter-Strike/cs_bold.ttf);
 }
 
-@font-face {
-    font-family: Exo_2_Medium;
-    src: url(Fonts/Exo_2/static/Exo2-Medium.ttf);
-}
-
 main{
     background: url('Images/background.jpg') no-repeat center center;
     background-attachment: fixed;
     background-size: cover;
+    position:fixed;
+    overflow-y: auto;
     min-height: 100vh;
+    min-width: 100vw;
     height: 100%;
+    padding-bottom: 100px;
 }
 
 main::before{
@@ -49,21 +51,19 @@ a:hover{
     opacity: 0.7;
 }
 
-.logo {
-    font-size: 24px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-}
-
 nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
     background: #23232e;
     height: 8vh;
-    font-family: Counter-Strike;
     position: relative;
-    z-index: 2;
+    z-index: 1;
+    font-size: large;
+}
+
+nav a{
+    font-family: Counter-Strike;
 }
 
 *, *::before, *::after{
@@ -94,7 +94,7 @@ nav{
     transition-delay: 200ms;
 }
 
-.image > img{
+.image img{
     display: block;
     width: 100%;
     height: 100%;
@@ -182,6 +182,80 @@ nav{
     max-width: 600px;
     word-wrap: break-word;
     font-family: Exo_2_Medium;
+}
+
+/* ----------------------------------------------RESULTS PAGE---------------------------------------------- */
+.results-page h1{
+    color: white;
+    text-align: center;
+    padding: 25px 0;   
+}
+
+.event{
+    color: white;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.event-image{
+    width: 45px;
+    height: 45px;
+}
+
+.event a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 12px;
+}
+
+.results-table{
+    max-width: fit-content;
+    margin: 0 auto;
+    padding: 10px;
+    background-color:  #364250;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.results-table td{
+    padding: 10px 20px;
+    word-wrap: break-word;
+}
+
+.results-table table{
+    border-collapse: separate;
+    border-spacing: 0 3px;
+    margin: 0 auto;
+    width: 60vw;
+    color: white;
+}
+
+.results-table tr{
+    background-color: #28313b;
+}
+
+.team-image-results{
+    width: 35px;
+    height: 35px; 
+}
+
+.result-score{
+    display: flex;
+    justify-content: center;
+}
+
+.winner, .loser{
+    margin: 0 5px;
+    font-size: large;
+}
+.winner{
+    color: #00ff00;
+}
+
+.loser{
+    color: #ff0000;
 }
 
 /* ----------------------------------------------STATS PAGE---------------------------------------------- */
