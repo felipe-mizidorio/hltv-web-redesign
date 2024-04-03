@@ -141,11 +141,14 @@ nav a{
 /* ----------------------------------------------MATCHES PAGE---------------------------------------------- */
 
 .matches-table img{
-    width: 15px;
-    height: 15px;
     position: relative;
     top: 3px;
     right: 9px;
+}
+
+.team-image-matches {
+    width: 20px;
+    height: 20px;
 }
 
 .matches-main h1{
@@ -165,9 +168,6 @@ nav a{
     width: 90vw;
 }
 
-.matches-table th{
-    text-align: initial;
-}
 
 .matches-table tr:nth-child(4n+2), .matches-table tr:nth-child(4n+3){
     background-color: #364250;
@@ -182,13 +182,14 @@ nav a{
     max-width: 600px;
     word-wrap: break-word;
     font-family: Exo_2_Medium;
+    text-align: center;
 }
 
 /* ----------------------------------------------RESULTS PAGE---------------------------------------------- */
 .results-page h1{
     color: white;
     text-align: center;
-    padding: 25px 0;   
+    padding: 25px 0;  
 }
 
 .event{
