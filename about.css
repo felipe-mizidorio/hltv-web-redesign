@@ -1,0 +1,20 @@
+/* ---------------------------------------------- ABOUT PAGE ---------------------------------------------- */
+
+.about-div {
+    width: 70vw;
+    margin: 0 auto;
+    top: 20px;
+    padding: 50px;
+    background-color: #364250;
+    color: white;
+    z-index: 2;
+    height: fit-content;
+}
+
+.about-div h1, .about-div h2, .about-div p {
+    margin-bottom: 10px;
+}
+
+.about-div ul {
+    margin-left: 20px;
+}
