@@ -192,7 +192,7 @@ footer {
 }
 
 .news-table {
-    max-width: fit-content;
+    width: 50vw;
     margin: 0 auto;
     padding: 15px;
     background-color:  #364250;
@@ -203,11 +203,16 @@ footer {
 }
 
 .news-table table {
-    margin-top: 10px;
+    margin: 0 auto;
+    width: 47vw;
 }
 
 .news-table tr {
     background-color: #28313b;
+}
+
+.news{
+    padding: 20px 0;
 }
 
 .new {
