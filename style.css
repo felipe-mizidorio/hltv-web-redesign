@@ -234,8 +234,15 @@ footer {
     padding: 20px 50px;
     max-width: 600px;
     word-wrap: break-word;
-    font-family: Exo_2_Medium;
     text-align: center;
+}
+
+.live span{
+    padding-right: 0;
+    background-color: #fc1d1d;
+    border-radius: 4px;
+    font-weight: 700;
+    padding: 3px 7px;
 }
 
 /* ----------------------------------------------RESULTS PAGE---------------------------------------------- */
