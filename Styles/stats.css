@@ -1,56 +1,64 @@
 /* ----------------------------------------------STATS PAGE---------------------------------------------- */
 
-.stats-tables td{
-    padding: 10px 20px;
-    word-wrap: break-word;
-    font-family: Exo_2_Medium;
-    width: fit-content;
+.stats-tables td {
+  padding: 10px 20px;
+  word-wrap: break-word;
+  font-family: Exo_2_Medium;
+  width: fit-content;
 }
 
-.stats-tables{
-    display: flex;
+.stats-tables {
+  display: flex;
 }
 
-.stats-tables h1{
-    color: white;
-    text-align: center;
-    padding: 25px 0;   
+.stats-tables h1 {
+  color: white;
+  text-align: center;
+  padding: 25px 0;
 }
 
-.player-image, .team-image-stats, .country-image{
-    position: relative;
+.player-image,
+.team-image-stats,
+.country-image {
+  position: relative;
 }
 
-.player-image, .team-image-stats{
-    width: 35px;
-    height: 35px; 
+.player-image,
+.team-image-stats {
+  width: 35px;
+  height: 35px;
 }
 
-.country-image{
-    width: 20px;
+.country-image {
+  width: 20px;
 }
 
-.top-players-table, .top-teams-table{
-    color: white;
-    margin: 0 auto;
-    max-width: fit-content;
+.top-players-table,
+.top-teams-table {
+  color: white;
+  margin: 0 auto;
+  max-width: fit-content;
 }
 
-.top-players-table table, .top-teams-table table{
-    border-collapse: separate;
-    border-spacing: 0 3px;
-    width: 45vw;
+.top-players-table table,
+.top-teams-table table {
+  border-collapse: separate;
+  border-spacing: 0 3px;
+  width: 45vw;
 }
 
-.top-players-table tr, .top-teams-table tr{
-    background-color: #28313b;
+.top-players-table tr,
+.top-teams-table tr {
+  background-color: #28313b;
 }
 
-.top-players-table td:nth-child(-n+3), .top-teams-table td:nth-child(-n+2){
-    width: 20px;
-    padding-left: 10px;
+.top-players-table td:nth-child(-n + 3),
+.top-teams-table td:nth-child(-n + 2) {
+  width: 20px;
+  padding-left: 10px;
 }
 
-.top-players-table td:nth-child(3), .top-teams-table td:nth-child(2){
-    width: 50%;
+.top-players-table td:nth-child(3),
+.top-teams-table td:nth-child(2) {
+  width: 50%;
 }

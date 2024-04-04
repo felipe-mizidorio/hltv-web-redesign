@@ -1,74 +1,76 @@
 /* ----------------------------------------------RESULTS PAGE---------------------------------------------- */
 
-.results-page h1{
-    color: white;
-    text-align: center;
-    padding: 25px 0;  
+.results-page h1 {
+  color: white;
+  text-align: center;
+  padding: 25px 0;
 }
 
-.event{
-    color: white;
-    justify-content: center;
-    margin-bottom: 5px;
+.event {
+  color: white;
+  justify-content: center;
+  margin-bottom: 5px;
 }
 
-.event-image{
-    width: 45px;
-    height: 45px;
+.event-image {
+  width: 45px;
+  height: 45px;
 }
 
-.event a, .team-result a{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    column-gap: 12px;
+.event a,
+.team-result a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  column-gap: 12px;
 }
 
-.results-table{
-    max-width: fit-content;
-    margin: 0 auto;
-    padding: 10px;
-    background-color:  #364250;
-    text-align: center;
-    margin-bottom: 20px;
+.results-table {
+  max-width: fit-content;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #364250;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.results-table td{
-    padding: 10px 20px;
-    word-wrap: break-word;
+.results-table td {
+  padding: 10px 20px;
+  word-wrap: break-word;
 }
 
-.results-table table{
-    border-collapse: separate;
-    border-spacing: 0 3px;
-    margin: 0 auto;
-    width: 60vw;
-    color: white;
+.results-table table {
+  border-collapse: separate;
+  border-spacing: 0 3px;
+  margin: 0 auto;
+  width: 60vw;
+  color: white;
 }
 
-.results-table tr{
-    background-color: #28313b;
+.results-table tr {
+  background-color: #28313b;
 }
 
-.team-image-results{
-    width: 35px;
-    height: 35px; 
+.team-image-results {
+  width: 35px;
+  height: 35px;
 }
 
-.result-score{
-    display: flex;
-    justify-content: center;
+.result-score {
+  display: flex;
+  justify-content: center;
 }
 
-.winner, .loser{
-    margin: 0 5px;
-    font-size: large;
+.winner,
+.loser {
+  margin: 0 5px;
+  font-size: large;
 }
-.winner{
-    color: #00ff00;
+.winner {
+  color: #00ff00;
 }
 
-.loser{
-    color: #ff0000;
+.loser {
+  color: #ff0000;
 }

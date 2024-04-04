@@ -1,18 +1,19 @@
 /* ----------------------------------------------UNDER CONSTRUCTION---------------------------------------------- */
 
-.under_construction h1, .under_construction h2{
-    color: white;
-    text-align: center;
-    padding: 30px 0;
+.under_construction h1,
+.under_construction h2 {
+  color: white;
+  text-align: center;
+  padding: 30px 0;
 }
 
-.under_construction h1{
-    padding-top: 15vh;
+.under_construction h1 {
+  padding-top: 15vh;
 }
 
-.under_construction img{
-    padding-top: 20px;
-    display: block;
-    margin: 0 auto;
-    height: 50vh;
+.under_construction img {
+  padding-top: 20px;
+  display: block;
+  margin: 0 auto;
+  height: 50vh;
 }

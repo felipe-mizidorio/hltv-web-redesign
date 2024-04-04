@@ -1,21 +1,21 @@
 /* ----------------------------------------------NAV BAR---------------------------------------------- */
 
 @font-face {
-    font-family: Counter-Strike;
-    src: url(../Fonts/Counter-Strike/cs_bold.ttf);
+  font-family: Counter-Strike;
+  src: url(../Fonts/Counter-Strike/cs_bold.ttf);
 }
 
-nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background: #23232e;
-    height: 8vh;
-    position: relative;
-    z-index: 1;
-    font-size: large;
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #23232e;
+  height: 8vh;
+  position: relative;
+  z-index: 1;
+  font-size: large;
 }
 
-nav a{
-    font-family: Counter-Strike;
+nav a {
+  font-family: Counter-Strike;
 }

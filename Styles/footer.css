@@ -1,55 +1,62 @@
 /* ----------------------------------------------FOOTER---------------------------------------------- */
 
 footer {
-    display: flex;
-    justify-content: space-between;
-    background-color: #23232e;
-    z-index: 1;
-    position: relative;
-    font-size:large;
+  display: flex;
+  justify-content: space-between;
+  background-color: #23232e;
+  z-index: 1;
+  position: relative;
+  font-size: large;
 }
 
-.contact-table{
-    color: white;
-    margin: 0 auto;
-    max-width: fit-content;
-    justify-self: right;
-    text-align: center;
-}
-.contact-table td, .contact-table th{
-    border-collapse: separate;
-    padding: 5px;
-    width: 200px;
-}
-.nicknames{
-    font-size: 14px;
-    font-weight: bold;
-}
-.names{
-    font-size: 12px;
-}
-.positions{
-    font-size: 12px;
-}
-.socials{
-    font-size: 12px;
+.contact-table {
+  color: white;
+  margin: 0 auto;
+  max-width: fit-content;
+  justify-self: right;
+  text-align: center;
 }
 
-.icons{
-    display:flex;
-    background-color: #23232e;
-    height: 15vh;
+.contact-table td,
+.contact-table th {
+  border-collapse: separate;
+  padding: 5px;
+  width: 200px;
 }
-.icons p{
-    display: flex;
-    font-size: 13px;
-    align-items: end;
-    letter-spacing: 1px;    
-    color: white;
+
+.nicknames {
+  font-size: 14px;
+  font-weight: bold;
 }
-.icons i{
-    margin: 20px;
-    display: flex;
-    color: white;
-    align-items: center;
+
+.names {
+  font-size: 12px;
+}
+
+.positions {
+  font-size: 12px;
+}
+
+.socials {
+  font-size: 12px;
+}
+
+.icons {
+  display: flex;
+  background-color: #23232e;
+  height: 15vh;
+}
+
+.icons p {
+  display: flex;
+  font-size: 13px;
+  align-items: end;
+  letter-spacing: 1px;
+  color: white;
+}
+.icons i {
+  margin: 20px;
+  display: flex;
+  color: white;
+  align-items: center;
 }

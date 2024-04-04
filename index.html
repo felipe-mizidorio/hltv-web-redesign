@@ -1,195 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HLTV</title>
+    <link rel="stylesheet" href="Styles/style.css" />
+    <link rel="stylesheet" href="Styles/nav-bar.css" />
+    <link rel="stylesheet" href="Styles/home.css" />
+    <link rel="stylesheet" href="Styles/footer.css" />
+    <script
+      src="https://kit.fontawesome.com/295728620a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html"><h1>HLTV -</h1></a>
+        <a href="matches.html">Matches</a>
+        <a href="results.html">Results</a>
+        <a href="stats.html">Stats</a>
+        <a href="about.html">About</a>
+      </nav>
+    </header>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HLTV</title>
-  <link rel="stylesheet" href="Styles/style.css">
-  <link rel="stylesheet" href="Styles/nav-bar.css">
-  <link rel="stylesheet" href="Styles/home.css">
-  <link rel="stylesheet" href="Styles/footer.css">
-  <script src="https://kit.fontawesome.com/295728620a.js" crossorigin="anonymous"></script>
-</head>
-    <body>
-        <header>
-          <nav>
-            <a href="index.html"><h1>HLTV -</h1></a>
-            <a href="matches.html">Matches</a>
-            <a href="results.html">Results</a>
-            <a href="stats.html">Stats</a>
-            <a href="about.html">About</a>
-          </nav>
-        </header>
+    <main>
+      <div class="carousel" data-carousel>
+        <button class="carousel-button prev" data-carousel-button="prev">
+          <img src="Images/arrow.png" />
+        </button>
+        <button class="carousel-button next" data-carousel-button="next">
+          <img src="Images/arrow.png" />
+        </button>
+        <ul data-images>
+          <li class="image" data-active>
+            <img src="Images/News/news01.jpeg" alt="Image #1" />
+          </li>
+          <li class="image">
+            <img src="Images/News/news02.jpeg" alt="Image #2" />
+          </li>
+          <li class="image">
+            <img src="Images/News/news03.jpeg" alt="Image #3" />
+          </li>
+        </ul>
+      </div>
 
-        <main>
-          <div class="carousel" data-carousel>
-            <button class="carousel-button prev" data-carousel-button="prev"><img src="Images/arrow.png"></button>
-            <button class="carousel-button next" data-carousel-button="next"><img src="Images/arrow.png"></button>
-            <ul data-images>
-              <li class="image" data-active>
-                <img src="Images/News/news01.jpeg" alt="Image #1">
-              </li>
-              <li class="image">
-                <img src="Images/News/news02.jpeg" alt="Image #2">
-              </li>
-              <li class="image">
-                <img src="Images/News/news03.jpeg" alt="Image #3">
-              </li>
-            </ul>
-          </div>
-
-          <div class="news-table">
-            <div class="news">
-              <h1>LATEST NEWS</h1>
-            </div>
-            <table>
-              <tbody>
-                <tr>
-                  <td>
-                    <div class="new">
-                      <a href="under_construction.html">
-                        <img
-                        src="Images/Countries/brazil.webp"
-                        alt="Event"
-                        class="country-news-image"
-                        >
-                        paiN replace Preasy at Global Esports Tour Rio
-                      </a>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="new">
-                      <a href="under_construction.html">
-                        <img
-                        src="Images/Countries/brazil.webp"
-                        alt="Event"
-                        class="country-news-image"
-                        >
-                        n1ssim returns to Sharks after paiN loan deal expires
-                      </a>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="new">
-                      <a href="under_construction.html">
-                        <img
-                        src="Images/Countries/russia.webp"
-                        alt="Event"
-                        class="country-news-image"
-                        >
-                        hooch leaves Aurora
-                      </a>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="new">
-                      <a href="under_construction.html">
-                        <img
-                        src="Images/Countries/brazil.webp"
-                        alt="Event"
-                        class="country-news-image"
-                        >
-                        Rio de Janeiro to host IEM Fall 2024
-                      </a>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="new">
-                      <a href="under_construction.html">
-                        <img
-                        src="Images/Countries/russia.webp"
-                        alt="Event"
-                        class="country-news-image"
-                        >
-                        FORZE bench roster, r3salt joins Aurora
-                      </a>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="new">
-                      <a href="under_construction.html">
-                        <img
-                        src="Images/Countries/australia.webp"
-                        alt="Event"
-                        class="country-news-image"
-                        >
-                        FlyQuest sign ex-Grayhound roster
-                      </a>
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </main>
-
-        <footer>
-          <table class="contact-table">
-            <tr class="nicknames">
-              <th>Martin</th>
-              <th>Nomah</th>
-              <th>Professeur</th>
-              <th>Striker</th>
-            </tr>
-            <tr class="names">
-              <td>Martin Rosenbæk</td>
-              <td>Per Lambæk</td>
-              <td>Zvonimir Burazin</td>
-              <td>Milan Švejda</td>
-            </tr>
-            <tr class="positions">
-              <td>CEO</td>
-              <td>CTO</td>
-              <td>Head of Operations</td>
-              <td>Editor-in-chief</td>
-            </tr>
-            <tr class="socials">
-              <td >
-                <a href="https://twitter.com/rosenchef" target="_blank">
-                  <i class="fa-brands fa-x-twitter"></i>rosenchef
-                </a>
-              </td>
+      <div class="news-table">
+        <div class="news">
+          <h1>LATEST NEWS</h1>
+        </div>
+        <table>
+          <tbody>
+            <tr>
               <td>
-                <a href="https://twitter.com/nomah" target="_blank">
-                  <i class="fa-brands fa-x-twitter"></i>nomah
-                </a>
+                <div class="new">
+                  <a href="under_construction.html">
+                    <img
+                      src="Images/Countries/brazil.webp"
+                      alt="Event"
+                      class="country-news-image"
+                    />
+                    paiN replace Preasy at Global Esports Tour Rio
+                  </a>
+                </div>
               </td>
-              <td><a href="https://twitter.com/Professeur_CS" target="_blank">
-                <i class="fa-brands fa-x-twitter"></i>Professeur_CS
-              </a>
-            </td>
-              <td><a href="https://twitter.com/StrikerHLTVorg" target="_blank">
-                <i class="fa-brands fa-x-twitter"></i>
-                StrikerHLTVorg
-              </a>
-            </td>
             </tr>
-          </table>
-          <div class="icons">
-            <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-brands fa-twitch"></i>
-            <i class="fa-brands fa-youtube"></i>
-            <i class="fa-brands fa-x-twitter"></i>
-            <i class="fa-brands fa-vk"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-tiktok"></i>
-            <p>© 2023 HLTV</p>
+            <tr>
+              <td>
+                <div class="new">
+                  <a href="under_construction.html">
+                    <img
+                      src="Images/Countries/brazil.webp"
+                      alt="Event"
+                      class="country-news-image"
+                    />
+                    n1ssim returns to Sharks after paiN loan deal expires
+                  </a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="new">
+                  <a href="under_construction.html">
+                    <img
+                      src="Images/Countries/russia.webp"
+                      alt="Event"
+                      class="country-news-image"
+                    />
+                    hooch leaves Aurora
+                  </a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="new">
+                  <a href="under_construction.html">
+                    <img
+                      src="Images/Countries/brazil.webp"
+                      alt="Event"
+                      class="country-news-image"
+                    />
+                    Rio de Janeiro to host IEM Fall 2024
+                  </a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="new">
+                  <a href="under_construction.html">
+                    <img
+                      src="Images/Countries/russia.webp"
+                      alt="Event"
+                      class="country-news-image"
+                    />
+                    FORZE bench roster, r3salt joins Aurora
+                  </a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="new">
+                  <a href="under_construction.html">
+                    <img
+                      src="Images/Countries/australia.webp"
+                      alt="Event"
+                      class="country-news-image"
+                    />
+                    FlyQuest sign ex-Grayhound roster
+                  </a>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
 
-          </div>
+    <footer>
+      <table class="contact-table">
+        <tr class="nicknames">
+          <th>Martin</th>
+          <th>Nomah</th>
+          <th>Professeur</th>
+          <th>Striker</th>
+        </tr>
+        <tr class="names">
+          <td>Martin Rosenbæk</td>
+          <td>Per Lambæk</td>
+          <td>Zvonimir Burazin</td>
+          <td>Milan Švejda</td>
+        </tr>
+        <tr class="positions">
+          <td>CEO</td>
+          <td>CTO</td>
+          <td>Head of Operations</td>
+          <td>Editor-in-chief</td>
+        </tr>
+        <tr class="socials">
+          <td>
+            <a href="https://twitter.com/rosenchef" target="_blank">
+              <i class="fa-brands fa-x-twitter"></i>rosenchef
+            </a>
+          </td>
+          <td>
+            <a href="https://twitter.com/nomah" target="_blank">
+              <i class="fa-brands fa-x-twitter"></i>nomah
+            </a>
+          </td>
+          <td>
+            <a href="https://twitter.com/Professeur_CS" target="_blank">
+              <i class="fa-brands fa-x-twitter"></i>Professeur_CS
+            </a>
+          </td>
+          <td>
+            <a href="https://twitter.com/StrikerHLTVorg" target="_blank">
+              <i class="fa-brands fa-x-twitter"></i>
+              StrikerHLTVorg
+            </a>
+          </td>
+        </tr>
+      </table>
+      <div class="icons">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitch"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-vk"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-tiktok"></i>
+        <p>© 2023 HLTV</p>
+      </div>
+    </footer>
 
-        </footer>
-
-        <script src="script.js" defer></script>
-    </body>
+    <script src="script.js" defer></script>
+  </body>
 </html>
