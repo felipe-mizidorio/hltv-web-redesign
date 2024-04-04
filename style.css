@@ -15,11 +15,9 @@ main{
     background: url('Images/background.jpg') no-repeat center center;
     background-attachment: fixed;
     background-size: cover;
-    /* position:fixed; */
     overflow-x: hidden;
     overflow-y: auto;
     min-height: 100vh;
-    /* min-width: 100vw; */
     height: 100%;
     padding-bottom: 100px;
 }
@@ -74,7 +72,7 @@ nav a{
 footer {
     display: flex;
     justify-content: space-between;
-    background-color: #324357;
+    background-color: #23232e;
     z-index: 1;
     position: relative;
     font-size:large;
@@ -108,7 +106,7 @@ footer {
 
 .icons{
     display:flex;
-    background-color: #324357;
+    background-color: #23232e;
     height: 15vh;
 }
 .icons p{
@@ -258,7 +256,7 @@ footer {
     height: 45px;
 }
 
-.event a {
+.event a, .team-result a{
     display: flex;
     flex-direction: row;
     align-items: center;
