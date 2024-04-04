@@ -193,6 +193,48 @@ footer {
     transform: rotate(180deg);
 }
 
+.news-table {
+    max-width: fit-content;
+    margin: 0 auto;
+    padding: 15px;
+    background-color:  #364250;
+    text-align: center;
+    color: white;
+    position: relative;
+    top: 50px;
+}
+
+.news-table table {
+    margin-top: 10px;
+}
+
+.news-table tr {
+    background-color: #28313b;
+}
+
+.new {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+    justify-content: left;
+    max-width: fit-content;
+}
+
+.new a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 12px;
+}
+
+.country-new-image {
+    width: 10px;
+    height: 10px;
+}
+
 /* ----------------------------------------------MATCHES PAGE---------------------------------------------- */
 
 .matches-table img{
